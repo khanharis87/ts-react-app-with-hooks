@@ -12,6 +12,7 @@ function appReducer(state: IState | any = {}, action: IAction) {
     favorites: favoriteReducer(state.favorites, action)
   };
 }
+
 export const Store = React.createContext<IState | any>(initalState);
 
 function episodesReducer(episode: Array<IEpisode> = [], action: IAction) {
